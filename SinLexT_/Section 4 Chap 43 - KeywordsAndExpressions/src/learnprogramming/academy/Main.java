@@ -11,6 +11,9 @@ public class Main {
             System.out.println("This is an expression");
 
         }
+        
+        //In the Java programming language, a Keyword is any one of 51 reserved words(like if/while/etc).
+        //A Java expression consists of variables, operators, literals, and method calls. 
 
 
 
