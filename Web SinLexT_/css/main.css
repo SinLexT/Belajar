@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif; /* kalo dengan alasan apapun gak bisa ambil montserrat dari google maka bakal ngambil sans-serif */
+    margin: 0;
+
+    
+}
+
+.hero-bg {
+    background: #307D99 url('../images/bg.jpg');
+    background-position: 12% 83%;
+    color: white;
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+header {
+    padding: 1em 0; /* give you padding on the top and bottom */
+}
+
+.hero-bg a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+section {
+    margin: 0 1em; /*  give you padding on the left and right , 37.5em kenapa section bawah doang malah atas enggak ????*/
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 2em 0 1.2em;
+}
+
+h1 span {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.4rem;
+    position: relative; /* supaya kalo ngubah posisi relative dengan parent containernya*/
+    z-index: 1;
+}
+
+h1 span::before {
+    content: ' ';
+    position: absolute; /* biar gak pindah" kayaknya */
+    width: 3em;
+    background: #00BBFF;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+
+.hero-bg p {
+    font-weight: bold;
+    margin: 0 1em 3em;
+}
+
+.form-container  {
+    background-color: white;
+    margin: 2em -1em 0;
+    padding:2em;
+}
+
+label {
+    color: #2D7D98;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+input[type=text] {
+    border: 1px solid #707070;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: .5em;
+    margin-top: 1.2em;
+}
+.form-container p {
+    color: grey;
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    font-size: .9em;
+    margin-top: .3em;
+}
+
+input[type=button] {
+    background-color: #F89104;
+    border:none;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+    border-radius: .5em;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: rgb(216, 126, 1);
+}
+
+.authentic {
+    margin:0;
+}
+
+img {
+    width: 100%;
+}
